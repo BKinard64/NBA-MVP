@@ -172,6 +172,10 @@ footer a:visited:hover {
 	.east-standings-wrapper {
 		margin-bottom: 7.5%;
 	}
+
+	td, th {
+		padding: 0.5em 0.5em;
+	}
 }
 
 /* Desktop Styles */
