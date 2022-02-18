@@ -62,7 +62,7 @@ body {
 	width: 100%;
 }
 
-h2 {
+h2, h3 {
 	font-family: Helvetica;
 	font-weight: bold;
 }
@@ -119,6 +119,36 @@ h2 {
 	margin-bottom: 30%;
 }
 
+.standings-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+table {
+	border: 5px solid black;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 0.5em 1.5em;
+}
+
+th {
+	border-bottom: 2.5px solid black;
+}
+
+#east-standings th {
+	background-color: #6495ed;	/* Cornflower Blue */
+}
+
+#west-standings th {
+	background-color: #f08080;	/* Light Coral */
+}
+
 /* Footer */
 footer {
 	background-color: #FF0000;	/* Red */
@@ -137,6 +167,13 @@ footer a:visited:hover {
 	text-decoration: underline;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 960px) {
+	.east-standings-wrapper {
+		margin-bottom: 7.5%;
+	}
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 	.week-container {
@@ -149,5 +186,10 @@ footer a:visited:hover {
 
 	.player-info img {
 		width: 25%;
+	}
+
+	.standings-wrapper {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }
